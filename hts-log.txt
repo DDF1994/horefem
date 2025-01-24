@@ -1,0 +1,17 @@
+HTTrack3.49-2+htsswf+htsjava launched on Mon, 10 Jun 2024 14:59:27 at https://01582192000.sandbox.beedigitalweb.com/ +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps0u2%s%uN100%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" https://01582192000.sandbox.beedigitalweb.com/ -O1 "C:\My Web Sites\web" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+14:59:36	Error: 	"Bad Request" (400) at link https://www.googletagmanager.com/gtm.js?id= (from https://01582192000.sandbox.beedigitalweb.com/)
+15:01:48	Error: 	"Not Found" (404) at link https://01582192000.sandbox.beedigitalweb.com/assets/css/images/layers.png (from https://01582192000.sandbox.beedigitalweb.com/assets/css/external-libs.css?1717583699748)
+15:01:48	Error: 	"Not Found" (404) at link https://01582192000.sandbox.beedigitalweb.com/assets/css/images/layers-2x.png (from https://01582192000.sandbox.beedigitalweb.com/assets/css/external-libs.css?1717583699748)
+15:01:48	Error: 	"Not Found" (404) at link https://01582192000.sandbox.beedigitalweb.com/assets/css/images/geocoder.png (from https://01582192000.sandbox.beedigitalweb.com/assets/css/external-libs.css?1717583699748)
+15:01:48	Error: 	"Not Found" (404) at link https://01582192000.sandbox.beedigitalweb.com/assets/css/images/throbber.gif (from https://01582192000.sandbox.beedigitalweb.com/assets/css/external-libs.css?1717583699748)
+15:02:13	Error: 	"Not Found" (404) at link https://01582192000.sandbox.beedigitalweb.com/assets/css/icons/6.323 (from https://01582192000.sandbox.beedigitalweb.com/assets/css/icons/discover.svg)
+
+HTTrack Website Copier/3.49-2 mirror complete in 2 minutes 46 seconds : 449 links scanned, 443 files written (50744685 bytes overall) [46677655 bytes received at 281190 bytes/sec], 5510448 bytes transferred using HTTP compression in 57 files, ratio 20%, 87.2 requests per connection
+(6 errors, 0 warnings, 0 messages)

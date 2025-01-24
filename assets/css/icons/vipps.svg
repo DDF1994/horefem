@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="32px" viewBox="0 0 48 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>vipps</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="E-commerce----Payments-V2-expand" transform="translate(-533.000000, -9636.000000)">
+            <g id="Group-11" transform="translate(249.000000, 310.000000)">
+                <g id="vipps" transform="translate(284.000000, 9326.000000)">
+                    <rect id="Rectangle" fill="#FFFFFF" fill-rule="nonzero" x="0" y="0" width="48" height="32"></rect>
+                    <rect id="Rectangle" fill="#FF5B24" fill-rule="nonzero" x="0" y="0" width="48" height="32" rx="3.5"></rect>
+                    <rect id="Rectangle" fill="#FF5B24" fill-rule="nonzero" x="3" y="2" width="42" height="27" rx="13.5"></rect>
+                    <path d="M27.8641,12.2624 C29.2412,12.2624 30.4213,11.217 30.4213,9.71443 L30.4216,9.71443 C30.4216,8.21146 29.2412,7.16643 27.8641,7.16643 C26.4875,7.16643 25.3077,8.21146 25.3077,9.71443 C25.3077,11.217 26.4875,12.2624 27.8641,12.2624 Z M31.2079,16.3793 C29.5029,18.6003 27.7,20.1359 24.52,20.1359 L24.5204,20.1359 C21.276,20.1359 18.7513,18.1757 16.7846,15.301 C15.9976,14.1247 14.7847,13.8635 13.8995,14.4843 C13.0801,15.0724 12.8839,16.3139 13.6374,17.3922 C16.358,21.5412 20.1276,23.9582 24.52,23.9582 C28.5525,23.9582 31.6996,21.9984 34.1578,18.7313 C35.0754,17.5228 35.0427,16.2813 34.1578,15.5951 C33.338,14.9411 32.1252,15.1708 31.2079,16.3793 Z" id="Shape" fill="#FFFFFF"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
