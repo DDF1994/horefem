@@ -1,22 +1,3 @@
-/* Reset y estilos base */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Roboto', sans-serif;
-    line-height: 1.6;
-    color: #333;
-}
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
 /* Header */
 .main-header {
     background: #fff;
@@ -79,17 +60,22 @@ body {
     }
 }
 
+/* Estilos del menú móvil */
 @media only screen and (max-width: 767px) {
+    /* Botón del menú */
     .nav .menuToggle {
         display: block;
-        position: relative;
-        z-index: 1;
-        padding: 15px;
-        background: none;
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        z-index: 1001;
+        padding: 10px;
+        background: transparent;
         border: none;
         cursor: pointer;
     }
 
+    /* Contenedor del menú */
     .nav .navContainer {
         display: none;
         position: absolute;
@@ -97,83 +83,39 @@ body {
         left: 0;
         width: 100%;
         background: #000;
-        padding: 20px;
+        padding: 10px 0;
         z-index: 1000;
     }
 
-    .nav.opened-menu .navContainer {
-        display: block;
-    }
-
+    /* Items del menú */
     .nav .navContainer li {
         display: block;
         margin: 0;
         padding: 0;
+        border-bottom: 1px solid rgba(255,255,255,0.1);
     }
 
     .nav .navContainer li a {
         display: block;
-        padding: 10px 15px;
+        padding: 12px 15px;
         color: #fff;
-        border-bottom: 1px solid rgba(255,255,255,0.1);
+        text-decoration: none;
     }
 
+    /* Submenús */
     .nav .navContainer ul ul {
         display: none;
         background: rgba(255,255,255,0.1);
         padding-left: 20px;
     }
 
-    .nav .navContainer li.submenu-open > ul {
+    /* Estado abierto del menú */
+    .nav.opened-menu .navContainer {
         display: block;
     }
 
-    .submenu-indicator {
-        float: right;
-        margin-left: 10px;
-    }
-
-    .hamburger {
-        display: block;
-        width: 25px;
-        height: 3px;
-        background: #735843;
+    /* Ajuste del nav para posicionamiento */
+    .nav {
         position: relative;
-        transition: all 0.3s;
-    }
-
-    .hamburger:before,
-    .hamburger:after {
-        content: '';
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        background: #735843;
-        transition: all 0.3s;
-    }
-
-    .hamburger:before {
-        top: -8px;
-    }
-
-    .hamburger:after {
-        bottom: -8px;
-    }
-
-    .opened-menu .hamburger {
-        transform: rotate(45deg);
-        background: #d9b777;
-    }
-
-    .opened-menu .hamburger:before {
-        top: 0;
-        transform: rotate(0);
-        background: #d9b777;
-    }
-
-    .opened-menu .hamburger:after {
-        bottom: 0;
-        transform: rotate(-90deg);
-        background: #d9b777;
     }
 } 
