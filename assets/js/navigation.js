@@ -17,14 +17,15 @@ $(document).ready(function() {
         
         // Forzar cálculo de layout antes de animar
         $navContainer.css('display', 'block');
-        const height = $navContainer.outerHeight();
         $navContainer.css('display', '').css('height', 0);
         
         $nav.toggleClass('opened-menu');
         
         if($nav.hasClass('opened-menu')) {
+            // Calcular altura en tiempo real
+            const currentHeight = $navContainer.prop('scrollHeight');
             $navContainer.stop(true).animate({
-                height: 160
+                height: currentHeight
             }, 300);
         } else {
             $navContainer.stop(true).animate({

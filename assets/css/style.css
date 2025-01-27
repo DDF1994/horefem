@@ -343,4 +343,36 @@
     .slider {
         height: 300px;
     }
+}
+
+/* Ajustar logo del footer para móviles */
+@media (max-width: 767px) {
+    #m4679 {
+        max-width: 40% !important; /* Aumentamos del 25% actual al 40% */
+    }
+}
+
+/* Ajustar contactos del footer para móviles */
+@media (max-width: 767px) {
+    #m3000 .footertext a {
+        display: inline-block;
+        text-align: center;
+        margin: 5px 0;
+    }
+    
+    #m3000 .footertext a:last-child {
+        display: block;
+        margin-top: 10px;
+    }
+    
+    #m3000 .footertext a:last-child::before,
+    #m3000 .footertext a:last-child::after {
+        content: none; /* Asegura que no haya guiones antes ni después del email */
+    }
+    
+    /* Ocultar el guion que está antes del email */
+    #m3000 .footertext > a:last-child {
+        display: block;
+        margin-top: 10px;
+    }
 } 
