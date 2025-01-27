@@ -14,20 +14,32 @@ $(document).ready(function() {
     $menuToggle.on('click', function(e) {
         e.preventDefault();
         e.stopPropagation();
-        console.log('Menu toggle clicked');
+        
+        // Forzar cálculo de layout antes de animar
+        $navContainer.css('display', 'block');
+        const height = $navContainer.outerHeight();
+        $navContainer.css('display', '').css('height', 0);
         
         $nav.toggleClass('opened-menu');
-        $navContainer.slideToggle(300);
         
-        var isExpanded = $nav.hasClass('opened-menu');
-        $(this).attr('aria-expanded', isExpanded);
+        if($nav.hasClass('opened-menu')) {
+            $navContainer.stop(true).animate({
+                height: height
+            }, 300);
+        } else {
+            $navContainer.stop(true).animate({
+                height: 0
+            }, 300);
+        }
+        
+        $(this).attr('aria-expanded', $nav.hasClass('opened-menu'));
     });
 
     // Click fuera para cerrar
     $(document).on('click', function(e) {
         if (!$(e.target).closest('#m5000').length && $nav.hasClass('opened-menu')) {
             $nav.removeClass('opened-menu');
-            $navContainer.slideUp(300);
+            $navContainer.stop(true).animate({height: 0}, 300);
             $menuToggle.attr('aria-expanded', false);
         }
     });
