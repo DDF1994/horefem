@@ -24,7 +24,7 @@ $(document).ready(function() {
         
         if($nav.hasClass('opened-menu')) {
             $navContainer.stop(true).animate({
-                height: height
+                height: 160
             }, 300);
         } else {
             $navContainer.stop(true).animate({
