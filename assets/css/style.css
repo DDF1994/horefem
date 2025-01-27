@@ -348,7 +348,7 @@
 /* Ajustar logo del footer para móviles */
 @media (max-width: 767px) {
     #m4679 {
-        max-width: 40% !important; /* Aumentamos del 25% actual al 40% */
+        max-width: 50% !important; /* Aumentamos del 25% actual al 40% */
     }
 }
 
