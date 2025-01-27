@@ -40,9 +40,15 @@ $(document).ready(function() {
     // Toggle de submenús en móvil
     $subMenus.children('a').on('click', function(e) {
         if (window.innerWidth <= 767) {
+            // En móvil, permitir que el enlace funcione normalmente
+            if ($(this).parent().hasClass('submenu-serveis')) {
+                return true;
+            }
+        }
+        // En desktop o para otros submenús
+        if ($(this).siblings('ul').length) {
             e.preventDefault();
-            var $submenu = $(this).siblings('ul');
-            $submenu.slideToggle(300);
+            $(this).siblings('ul').slideToggle(300);
         }
     });
 
@@ -73,7 +79,7 @@ $(document).ready(function() {
         // Click en flecha anterior
         $gallery.find('.prev').click(function() {
             $slides.eq(currentSlide).removeClass('active');
-            currentSlide = (currentSlide - 1 + $slides.length) % $slides.length;
+            currentSlide = (currentSlide - 1 + $slides.length) % slides.length;
             $slides.eq(currentSlide).addClass('active');
         });
     });
