@@ -83,6 +83,14 @@
         z-index: 1002; /* Por encima del menú hamburguesa */
     }
 
+    .nav .serveis-mobile {
+        display:  list-item !important;
+    }
+
+    .nav .serveis-desktop {
+        display: none !important;
+    }
+
     /* Botón del menú - mantenemos estos estilos que funcionan */
     .nav .menuToggle {
         display: block;

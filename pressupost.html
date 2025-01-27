@@ -27,6 +27,34 @@ nav > ul .closeBtn { color: rgb(204, 204, 204);  }
 .nav .navIcon.fa { padding-right: 10px; padding-bottom: 2px;  } 
 nav > ul > li > ul li a:hover { background-color: rgb(255, 255, 255);  } 
 nav > ul li a:hover { border-color: rgb(255, 255, 255);  } 
+
+/* Ocultar submenu en móvil */
+@media only screen and (max-width: 767px) {
+    nav > ul > li.submenu-serveis > ul {
+        display: none !important;
+    }
+}
+
+/* Estilos para móvil */
+@media only screen and (max-width: 767px) {
+    /* Ocultar submenu en móvil */
+    .desktop-only-submenu {
+        display: none !important;
+    }
+    
+    /* Asegurar que el enlace principal funcione en móvil */
+    .submenu-serveis > a {
+        pointer-events: auto !important;
+    }
+}
+
+/* Estilos para desktop */
+@media only screen and (min-width: 768px) {
+    /* Mantener comportamiento normal del submenu en desktop */
+    .desktop-only-submenu {
+        display: block;
+    }
+}
 </style><style id="style_subtitle">.subtitle { font-weight: 700; font-size: 32px; line-height: 1.2em; margin-bottom: 20px;  } 
 .subtitle a:hover { color: #bfb2aa;  } 
 </style><style id="style_preamble">.preamble { font-size: 30px; line-height: 1.4em; margin-bottom: 5px;  } 
@@ -559,173 +587,168 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             <div class="flexWrap">
                                 <nav id="m5000"  class="module nav" data-settings="vertical=false,direction=left,push=true,activeParent=false,verticalNav-md=true,verticalNav-lg=false,verticalNav-sm=false"  aria-label="Navegació" tabindex="-1">
                                     <a href="javascript:void(0)" class="menuToggle" aria-label="Abrir menú"></a>
-                                    <ul class="navContainer"><li class=" active">
-                                        <a href="index.html">Inici</a>
-                                        </li><li class="">
-                                        <a 
-                                        href="serveis.html">serveis</a>
-                                        <ul><li class="">
-                                        <a  
-                                        
-                                        href="serveis.html#cuines">Cuines, banys i habitacions</a>
-                                        
-                                    </li><li class="">
-                                        <a  
-                                        
-                                        href="serveis.html#pintura">Pintura, acabats i textures</a>
-                                        
-                                    </li><li class="">
-                                        <a  
-                                        
-                                        href="serveis.html#fontaneria">Fontaneria, electricitat i seguretat</a>
-                                        
-                                    </li><li class="">
-                                        <a  
-                                        
-                                        href="serveis.html#parquet">Parquet, rajoles i terres</a>
-                                        
-                                    </li><li class="">
-                                        <a  
-                                        
-                                        href="serveis.html#carpinteria">Fusteria, ebenisteria i bricolatge</a>
-                                        
-                                    </li><li class="">
-                                        <a  
-                                        
-                                        href="serveis.html#renovaciones">Renovacions, transformacions i modernitzacions</a>
-                                        
-                                    </li></ul>
-                                    </li><li class="">
-                                        <a 
-                                        href="pressupost.html">pressupost</a>
-                                        
-                                    </li><li class="">
-                                        <a 
-                                        href="coneix-nos.html">Coneix-nos</a>
-                                        
-                                    </li><li class="">
-                                        <a 
-                                        href="contacte.html">Contacte</a>
-                                        
-                                    </li></ul>
-            </nav></div>
+                                    <ul class="navContainer">
+                                        <li class="active">
+                                            <a href="index.html">Inici</a>
+                                        </li>
+                                        <li class="serveis-desktop">
+                                            <a href="serveis.html" class="mobile-direct-link">serveis</a>
+                                            <ul class="">
+                                                <li class="">
+                                                    <a href="serveis.html#cuines">Cuines, banys i habitacions</a>
+                                                </li>
+                                                <li class="">
+                                                    <a href="serveis.html#pintura">Pintura, acabats i textures</a>
+                                                </li>
+                                                <li class="">
+                                                    <a href="serveis.html#fontaneria">Fontaneria, electricitat i seguretat</a>
+                                                </li>
+                                                <li class="">
+                                                    <a href="serveis.html#parquet">Parquet, rajoles i terres</a>
+                                                </li>
+                                                <li class="">
+                                                    <a href="serveis.html#carpinteria">Fusteria, ebenisteria i bricolatge</a>
+                                                </li>
+                                                <li class="">
+                                                    <a href="serveis.html#renovaciones">Renovacions, transformacions i modernitzacions</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="serveis-mobile" style="display: none;">
+                                            <a href="serveis.html" class="mobile-direct-link">serveis</a>
+                                        </li>
+                                        <li class="">
+                                            <a href="pressupost.html">pressupost</a>
+                                        </li>
+                                        <li class="">
+                                            <a href="coneix-nos.html">Coneix-nos</a>
+                                        </li>
+                                        <li class="">
+                                            <a href="contacte.html">Contacte</a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
 
-            <div id="m4149"  class="module autospacer" ></div>
-            </div>
-            <div id="c3782"  class="col col-lg-3 col-sm-9 col-md-5 flexCol" ><div id="m4787"  class="module autospacer" ></div>
-            <div class="flexWrap">
+                            <div id="m4149"  class="module autospacer" ></div>
+                        </div>
+                        <div id="c3782"  class="col col-lg-3 col-sm-9 col-md-5 flexCol" ><div id="m4787"  class="module autospacer" ></div>
+                        <div class="flexWrap">
 
-            <div id="m3584"  class="module locale" data-req="locale" aria-label="Seleccionar idioma" role="list">
-                <ul>
-                    <li class="active" role="listitem"><a href="index.html"><i class="localeIcon svg-es-ct" aria-hidden="true"></i><span>català</span></a><li>
-                    <li class="" role="listitem"><a href="es.html"><i class="localeIcon svg-es" aria-hidden="true"></i><span>Español</span></a></li>
-                </ul>
-            </div></div>
+                        <div id="m3584"  class="module locale" data-req="locale" aria-label="Seleccionar idioma" role="list">
+                            <ul>
+                                <li class="active" role="listitem"><a href="index.html"><i class="localeIcon svg-es-ct" aria-hidden="true"></i><span>català</span></a><li>
+                                <li class="" role="listitem"><a href="es.html"><i class="localeIcon svg-es" aria-hidden="true"></i><span>Español</span></a></li>
+                            </ul>
+                        </div>
+                        </div>
 
-            <div id="m1150"  class="module autospacer" ></div>
-            </div>
+                        <div id="m1150"  class="module autospacer" ></div>
+                        </div>
 
-            <!--  <div id="c2061"  class="col col-lg-1 col-md-1 col-sm-3 flexCol" ><div id="m4742"  class="module autospacer" ></div>
+                        <!--  <div id="c2061"  class="col col-lg-1 col-md-1 col-sm-3 flexCol" ><div id="m4742"  class="module autospacer" ></div>
 
 
-                <div class="flexWrap">
-                <div class="module search" id="m4306" data-req="search" data-settings="showPages=true,showProducts=true,showPosts=true">
-                    <a href="javascript:void(0)" class="searchicon" data-overlay-trigger="click" data-overlay-open="search-m4306" role="search" aria-label="Cercar"></a>
-                    <div data-overlay-content="search-m4306" aria-hidden="true" role="dialog" aria-labelledby="overlayTitle" aria-describedby="overlaySubtitle">
-                        <p class="overlayTitle">Cercar</p>
-                        <form class="overlaySubtitle searchForm" data-noresults="La cerca no ha obtingut resultats" data-nosearch="És necessari un terme de cerca" role="form">
-                            <input type="text" name="searchQuery" autocomplete="off" aria-autocomplete="none">
-                            <button type="submit" role="button"></button>
-                        </form>
-                        <div class="pagesWrap" aria-label="Pàgines trobades" aria-live="polite"></div>
-                        <div class="productsWrap" aria-label="Productes trobats"  aria-live="polite"></div>
-                        <div class="postsWrap" aria-label="Publicacions trobades" aria-live="polite"></div>
-                    </div>
-                </div> 
-                </div>
+                            <div class="flexWrap">
+                            <div class="module search" id="m4306" data-req="search" data-settings="showPages=true,showProducts=true,showPosts=true">
+                                <a href="javascript:void(0)" class="searchicon" data-overlay-trigger="click" data-overlay-open="search-m4306" role="search" aria-label="Cercar"></a>
+                                <div data-overlay-content="search-m4306" aria-hidden="true" role="dialog" aria-labelledby="overlayTitle" aria-describedby="overlaySubtitle">
+                                    <p class="overlayTitle">Cercar</p>
+                                    <form class="overlaySubtitle searchForm" data-noresults="La cerca no ha obtingut resultats" data-nosearch="És necessari un terme de cerca" role="form">
+                                        <input type="text" name="searchQuery" autocomplete="off" aria-autocomplete="none">
+                                        <button type="submit" role="button"></button>
+                                    </form>
+                                    <div class="pagesWrap" aria-label="Pàgines trobades" aria-live="polite"></div>
+                                    <div class="productsWrap" aria-label="Productes trobats"  aria-live="polite"></div>
+                                    <div class="postsWrap" aria-label="Publicacions trobades" aria-live="polite"></div>
+                                </div>
+                            </div> 
+                            </div>
 
-                <div id="m1776"  class="module autospacer" ></div>
-                </div> 
-            </div>
-            </div>-->
+                            <div id="m1776"  class="module autospacer" ></div>
+                            </div> 
+                        </div>
+                        </div>-->
 
-            </header>><div id="r5002"   role="main" class="row  designRow" >
+                        </header>
+                        <div id="r5002"   role="main" class="row  designRow" >
     
     
     <div id="r5002c"  class="container container-fluid"><div id="c5002"  class="col col-sm-12" ><div id="r2209"    class="row  bgfilter" >
     
     
     <div id="r2209c"  class="container container-fixed"><div id="c3016"  class="col col-sm-12 col-lg-12 col-md-12 flexCol" ><div id="m3880"  class="module autospacer" ></div>
-<div id="m1464"  class="module autospacer" ></div>
-<div id="m1738"  class="module autospacer" ></div>
-<div id="m2116"  class="module autospacer" ></div>
-<div class="flexWrap">
+    <div id="m1464"  class="module autospacer" ></div>
+    <div id="m1738"  class="module autospacer" ></div>
+    <div id="m2116"  class="module autospacer" ></div>
+    <div class="flexWrap">
 
-<div id="m3757"  class="module text" ><h1 class="lightheadline" style="text-align: center;">Pressupost gratuït i sense compromís</h1></div>
-<div id="m2924"  class="module divider" ></div>
-</div>
+    <div id="m3757"  class="module text" ><h1 class="lightheadline" style="text-align: center;">Pressupost gratuït i sense compromís</h1></div>
+    <div id="m2924"  class="module divider" ></div>
+    </div>
 
-<div id="m1351"  class="module autospacer" ></div>
-</div>
-</div>
-</div>
-<div id="r2516"    class="row " >
+    <div id="m1351"  class="module autospacer" ></div>
+    </div>
+    </div>
+    </div>
+    <div id="r2516"    class="row " >
     
     
     <div id="r2516c"  class="container container-fixed"><div id="c8547"  class="col col-sm-12" ><div id="m3083"  class="module text" ><p class="bodytext" style="text-align: left;">A <span style="font-weight: bold;">T'ho Refem</span>, ens esforcem al màxim per reflectir els nostres valors en cada projecte: transparència en les nostres interaccions, eficiència en l'execució i una qualitat excepcional en els resultats.</p><p class="bodytext" style="text-align: left;"><br>La nostra experiència ens ha permès desenvolupar una metodologia senzilla, enfocada a garantir la qualitat i la puntualitat en cada projecte que emprenem.</p></div>
-</div>
-</div>
-</div>
-<div id="r1494"    class="row " >
+    </div>
+    </div>
+    </div>
+    <div id="r1494"    class="row " >
     
     
     <div id="r1494c"  class="container container-fixed colsStack"><div id="c2573"  class="col col-lg-12 col-sm-10 col-md-12 flexCol" ><div id="m1143"  class="module autospacer" ></div>
-<div class="flexWrap">
+    <div class="flexWrap">
 
-<div id="m4747"  class="module text" ><p class="preamble">L'elaboració dels nostres pressupostos destaca per la seva claredat i precisió, mantenint-te informat a cada pas del procés:</p></div>
-</div>
+    <div id="m4747"  class="module text" ><p class="preamble">L'elaboració dels nostres pressupostos destaca per la seva claredat i precisió, mantenint-te informat a cada pas del procés:</p></div>
+    </div>
 
-<div id="m1470"  class="module autospacer" ></div>
-</div>
-<div id="c2692"  class="col col-sm-12 col-md-12 col-lg-12" ><div id="m1935"  class="module text" ><h2 class="smallsubtitle" style="text-align: left;">Primers passos</h2></div>
-<div id="m1588"  class="module divider" ></div>
-<div id="m2389"  class="module text" ><p class="bodytext">Et convidem a emplenar el formulari per poder posar-nos en contacte i concertar una visita.</p></div>
-</div>
-<div id="c3234"  class="col col-lg-12 col-md-12 col-sm-12 flexCol" ><div id="m1218"  class="module autospacer" ></div>
-<div class="flexWrap">
+    <div id="m1470"  class="module autospacer" ></div>
+    </div>
+    <div id="c2692"  class="col col-sm-12 col-md-12 col-lg-12" ><div id="m1935"  class="module text" ><h2 class="smallsubtitle" style="text-align: left;">Primers passos</h2></div>
+    <div id="m1588"  class="module divider" ></div>
+    <div id="m2389"  class="module text" ><p class="bodytext">Et convidem a emplenar el formulari per poder posar-nos en contacte i concertar una visita.</p></div>
+    </div>
+    <div id="c3234"  class="col col-lg-12 col-md-12 col-sm-12 flexCol" ><div id="m1218"  class="module autospacer" ></div>
+    <div class="flexWrap">
 
-<div id="m4107"  class="module text" ><h2 class="smallsubtitle" style="text-align: left;">Visita</h2></div>
-<div id="m3907"  class="module divider" ></div>
-<div id="m1802"  class="module text" ><p class="bodytext">Essencial per a copsar l'essència del teu projecte, garantint propostes que realment s'alineïn amb els teus desitjos i expectatives.</p></div>
-</div>
+    <div id="m4107"  class="module text" ><h2 class="smallsubtitle" style="text-align: left;">Visita</h2></div>
+    <div id="m3907"  class="module divider" ></div>
+    <div id="m1802"  class="module text" ><p class="bodytext">Essencial per a copsar l'essència del teu projecte, garantint propostes que realment s'alineïn amb els teus desitjos i expectatives.</p></div>
+    </div>
 
-<div id="m4491"  class="module autospacer" ></div>
-</div>
-<div id="c2633"  class="col col-lg-12 col-md-12 col-sm-12 flexCol" ><div id="m2955"  class="module autospacer" ></div>
-<div class="flexWrap">
+    <div id="m4491"  class="module autospacer" ></div>
+    </div>
+    <div id="c2633"  class="col col-lg-12 col-md-12 col-sm-12 flexCol" ><div id="m2955"  class="module autospacer" ></div>
+    <div class="flexWrap">
 
-<div id="m2467"  class="module text" ><h2 class="smallsubtitle" style="text-align: left;">Pressupost</h2></div>
-<div id="m1555"  class="module divider" ></div>
-<div id="m2175"  class="module text" ><p class="bodytext">Després de la visita, i amb la màxima brevetat possible, t'enviarem un PDF detallat desglossant els costos del projecte. Així, proporcionarem una visió clara i completa de la inversió necessària.</p></div>
-</div>
+    <div id="m2467"  class="module text" ><h2 class="smallsubtitle" style="text-align: left;">Pressupost</h2></div>
+    <div id="m1555"  class="module divider" ></div>
+    <div id="m2175"  class="module text" ><p class="bodytext">Després de la visita, i amb la màxima brevetat possible, t'enviarem un PDF detallat desglossant els costos del projecte. Així, proporcionarem una visió clara i completa de la inversió necessària.</p></div>
+    </div>
 
-<div id="m3449"  class="module autospacer" ></div>
-</div>
-<div id="c1060"  class="col col-lg-12 col-md-12 col-sm-12 flexCol" ><div id="m4888"  class="module autospacer" ></div>
-<div class="flexWrap">
+    <div id="m3449"  class="module autospacer" ></div>
+    </div>
+    <div id="c1060"  class="col col-lg-12 col-md-12 col-sm-12 flexCol" ><div id="m4888"  class="module autospacer" ></div>
+    <div class="flexWrap">
 
-<div id="m4396"  class="module text" ><h2 class="smallsubtitle" style="text-align: left;">Compromís</h2></div>
-<div id="m1697"  class="module divider" ></div>
-<div id="m2663"  class="module text" ><p class="bodytext">Per confirmar l'acceptació del pressupost, es requereix un avançament determinat sobre el total del mateix. Aquest import es destina a cobrir els costos inicials, que inclouen l'adquisició de materials i l'organització dels nostres professionals. A més, aquest avançament garanteix la reserva de la data per iniciar el teu projecte, establint així un compromís ferm i assegurant que tot està preparat per a un començament exitós.</p></div>
-</div>
+    <div id="m4396"  class="module text" ><h2 class="smallsubtitle" style="text-align: left;">Compromís</h2></div>
+    <div id="m1697"  class="module divider" ></div>
+    <div id="m2663"  class="module text" ><p class="bodytext">Per confirmar l'acceptació del pressupost, es requereix un avançament determinat sobre el total del mateix. Aquest import es destina a cobrir els costos inicials, que inclouen l'adquisició de materials i l'organització dels nostres professionals. A més, aquest avançament garanteix la reserva de la data per iniciar el teu projecte, establint així un compromís ferm i assegurant que tot està preparat per a un començament exitós.</p></div>
+    </div>
 
-<div id="m1766"  class="module autospacer" ></div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div id="r2205"    class="row  cc_degradado1 bgfilter" >
+    <div id="m1766"  class="module autospacer" ></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div id="r2205"    class="row  cc_degradado1 bgfilter" >
     
         <div id="r2205c"  class="container container-fixed">
             <div id="c2615"  class="col col-sm-12" >
@@ -736,7 +759,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <a id="m4435"  class="module button cc_heartBeat cc_heartBeat cc_heartBeat cc_heartBeat cc_heartBeat cc_heartBeat"  href="contacte.html" target="" title=""     role="button">
             
             <span class="buttonLabel labelRight">Demana el teu pressupost</span>
-    </a></div>
+    </a>
+    </div>
     </div>
 </div>
 </div>
